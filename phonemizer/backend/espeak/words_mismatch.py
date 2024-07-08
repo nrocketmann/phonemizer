@@ -120,7 +120,7 @@ class Ignore(BaseWordsMismatch):
     """Ignores word count mismatches"""
 
     def process(self, text: List[str]) -> List[str]:
-        self._resume(len(self._mismatched_lines()), len(text))
+        #self._resume(len(self._mismatched_lines()), len(text))
         return text
 
 
