@@ -136,15 +136,15 @@ class KeepFlags(BaseLanguageSwitch):
             return
 
         nswitches = len(switches)
-        self._logger.warning(
-            '%s utterances containing language switches '
-            'on lines %s', nswitches,
-            ', '.join(str(switch) for switch in sorted(switches)))
-        self._logger.warning(
-            'extra phones may appear in the "%s" phoneset', self._language)
-        self._logger.warning(
-            'language switch flags have been kept '
-            '(applying "keep-flags" policy)')
+        # self._logger.warning(
+        #     '%s utterances containing language switches '
+        #     'on lines %s', nswitches,
+        #     ', '.join(str(switch) for switch in sorted(switches)))
+        # self._logger.warning(
+        #     'extra phones may appear in the "%s" phoneset', self._language)
+        # self._logger.warning(
+        #     'language switch flags have been kept '
+        #     '(applying "keep-flags" policy)')
 
 
 class RemoveFlags(BaseLanguageSwitch):
